@@ -1,0 +1,21 @@
+[submodule "modules/gateway"]
+	path = modules/gateway
+	url = https://github.com/mirco-modules/Gateway-Module.git
+[submodule "modules/user-module"]
+	path = modules/user-module
+	url = https://github.com/mirco-modules/User-Module.git
+[submodule "modules/staff-module"]
+	path = modules/staff-module
+	url = https://github.com/mirco-modules/Staff-Module.git
+[submodule "modules/ms-core"]
+	path = modules/ms-core
+	url = https://github.com/mirco-modules/Ms-Core.git
+[submodule "modules/organization-module"]
+	path = modules/organization-module
+	url = https://github.com/mirco-modules/Organization-Module.git
+[submodule "modules/hotel-module"]
+	path = modules/hotel-module
+	url = https://github.com/mirco-modules/Hotel-Module.git
+[submodule "modules/notifications-module"]
+	path = modules/notifications-module
+	url = https://github.com/mirco-modules/Notification-Module.git
