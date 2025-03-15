@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.khasanof</groupId>
+    <artifactId>modules</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>Modules</name>
+
+    <modules>
+        <module>ms-core</module>
+        <module>gateway</module>
+        <module>user-module</module>
+        <module>staff-module</module>
+        <module>organization-module</module>
+        <module>notifications-module</module>
+    </modules>
+
+</project>
