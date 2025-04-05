@@ -16,6 +16,7 @@
         <module>staff-module</module>
         <module>organization-module</module>
         <module>notifications-module</module>
+        <module>hotel-module</module>
     </modules>
 
 </project>
