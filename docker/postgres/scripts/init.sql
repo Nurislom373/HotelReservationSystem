@@ -1,0 +1,4 @@
+CREATE DATABASE hotel_common_db;
+CREATE DATABASE hotel_tenant_db;
+
+CREATE USER hotel_db WITH PASSWORD '123' SUPERUSER;
