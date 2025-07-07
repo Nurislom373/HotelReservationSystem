@@ -1,5 +1,5 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
-name: hotel-reservation
+version: '3'
 services:
   postgresql:
     image: postgres:latest
@@ -20,3 +20,4 @@ services:
     # remove the "127.0.0.1:" prefix
     ports:
       - "5432:5432"
+    command: postgres -c max_connections=300
