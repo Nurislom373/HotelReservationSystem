@@ -19,3 +19,6 @@
 [submodule "modules/notifications-module"]
 	path = modules/notifications-module
 	url = https://github.com/mirco-modules/Notification-Module.git
+[submodule "modules/migration-module"]
+	path = modules/migration-module
+	url = https://github.com/mirco-modules/Migration-Module.git
