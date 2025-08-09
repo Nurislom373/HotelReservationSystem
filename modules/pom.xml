@@ -18,6 +18,7 @@
         <module>organization-module</module>
         <module>notifications-module</module>
         <module>hotel-module</module>
+        <module>rate-plan-module</module>
     </modules>
 
 </project>

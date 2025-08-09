@@ -22,3 +22,6 @@
 [submodule "modules/migration-module"]
 	path = modules/migration-module
 	url = https://github.com/mirco-modules/Migration-Module.git
+[submodule "modules/rate-plan-module"]
+	path = modules/rate-plan-module
+	url = https://github.com/mirco-modules/Rate-Plan-Module.git
