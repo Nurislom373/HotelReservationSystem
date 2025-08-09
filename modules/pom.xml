@@ -13,6 +13,7 @@
         <module>ms-core</module>
         <module>gateway</module>
         <module>user-module</module>
+        <module>migration-module</module>
         <module>staff-module</module>
         <module>organization-module</module>
         <module>notifications-module</module>
