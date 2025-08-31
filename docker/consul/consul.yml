@@ -9,4 +9,4 @@ services:
       - "8300:8300"
       - "8500:8500"
       - "8600:8600"
-    command: consul agent -dev -ui -client 0.0.0.0 -log-level=INFO
+    command: consul agent -dev -ui -client 0.0.0.0 -bind 0.0.0.0 -log-level=INFO

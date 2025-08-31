@@ -2,9 +2,7 @@
 version: '3'
 services:
   postgresql:
-    image: postgres:latest
-    # volumes:
-    #   - ~/volumes/jhipster/gateway/postgresql/:/var/lib/postgresql/data/
+    image: postgres:13.8
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=987654321
@@ -15,9 +13,12 @@ services:
       timeout: 5s
       retries: 10
     volumes:
+      - postgres_data:/var/lib/postgresql/data
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-    # If you want to expose these ports outside your dev PC,
-    # remove the "127.0.0.1:" prefix
     ports:
       - "5432:5432"
     command: postgres -c max_connections=600
+
+volumes:
+  postgres_data:
+
