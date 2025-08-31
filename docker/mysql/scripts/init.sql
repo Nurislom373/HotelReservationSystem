@@ -1,0 +1,5 @@
+CREATE DATABASE hotel_common_db;
+CREATE DATABASE hotel_tenant_db;
+
+CREATE USER 'hotel_db' IDENTIFIED BY '123';
+GRANT ALL PRIVILEGES ON *.* TO 'hotel_db' WITH GRANT OPTION;

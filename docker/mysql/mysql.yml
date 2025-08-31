@@ -1,0 +1,26 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+name: hotel_mysql
+services:
+  mysql:
+    image: mysql:8.3.0
+    volumes:
+      - ./config/mysql:/etc/mysql/conf.d
+      - mysql_data:/var/lib/mysql
+      - ./scripts:/docker-entrypoint-initdb.d
+    #   - ~/volumes/jhipster/mysqlJhipster/mysql/:/var/lib/mysql/
+    environment:
+      - MYSQL_ROOT_PASSWORD=10Bd58c:G%~h
+      - MYSQL_DATABASE=default_hotel # Optional: create a default database
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - "3306:3306"
+    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
+    healthcheck:
+      test: [ 'CMD', 'mysql', '-e', 'SHOW DATABASES;' ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mysql_data: # Define the named volume
